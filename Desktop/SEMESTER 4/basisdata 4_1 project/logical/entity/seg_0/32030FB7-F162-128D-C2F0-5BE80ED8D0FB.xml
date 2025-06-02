@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="32030FB7-F162-128D-C2F0-5BE80ED8D0FB" name="price history ">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:45:19 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="start date" id="BEC72D9A-49C4-E447-0C54-1442E850ED63">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:45:32 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="start time" id="B5B0283A-7F89-3DBE-568E-FFD4259397AB">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:45:47 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,10,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="51D7C72C-F816-6FF4-6FA2-247853B53D7A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:46:13 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end date" id="F51FDB46-A231-0BFF-7370-4ED14FA1E334">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:46:41 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end time" id="3A442EC4-87FC-8D40-B523-AA144673F281">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:46:52 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,2,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="number" id="3EB7D258-5E9D-B5B2-C347-52AF6BE3268F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 02:01:08 UTC</createdTime>
+<generatorID>43B8B5D7-D63B-160F-CC38-3ACF8197301E</generatorID>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<referedAttribute>B362A34A-A57E-159B-1180-A9884E5208A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA3DAC5D-9389-123A-567E-1ED79136D9A1" name="price history PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:45:45 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BEC72D9A-49C4-E447-0C54-1442E850ED63</attributeRef>
+<attributeRef>B5B0283A-7F89-3DBE-568E-FFD4259397AB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

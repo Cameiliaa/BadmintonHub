@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54C716BF-A4F2-3BDA-4161-EC9576A4CB8E" name="costumer addres">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:33:09 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="BDD379B3-23B0-EB07-B8F1-194DF19615C5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:33:19 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="addrs line 1" id="B74D50EC-FB08-76E0-3E0B-A3AFBDE97370">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:33:22 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="addres line 2" id="E3757607-2E7D-EB82-5D1B-F0C09CEAF9A8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:33:22 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="3D907446-349B-0141-3B63-EF32B01D2DBC">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:34:08 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postal code" id="A193E23A-CDC1-073D-9981-504F74F34BCB">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:34:50 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Number" id="B0A15EA0-CA4A-0CFD-A961-DD889C2EDC1D">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:50:57 UTC</createdTime>
+<generatorID>01D41805-5FBE-6F0B-A44F-CDFA6ECD7DD6</generatorID>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<referedAttribute>4EA44847-9931-3BA8-D88C-1C95224DB465</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1F004F31-43F3-E661-D7B7-8333E4E7D179" name="costumer addres PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:33:40 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BDD379B3-23B0-EB07-B8F1-194DF19615C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

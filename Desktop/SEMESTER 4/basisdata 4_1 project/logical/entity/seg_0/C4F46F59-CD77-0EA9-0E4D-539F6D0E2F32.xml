@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4F46F59-CD77-0EA9-0E4D-539F6D0E2F32" name="sales representativ">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:29:01 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="739D7C08-3D75-CD49-E5DD-AE8325939AF3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:29:15 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first name " id="D79E7CE0-BB1A-28DA-C180-52220120EA81">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:29:29 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last name" id="A36DBA78-9DC6-6C2B-915A-03561099BDA7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:29:53 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phione number" id="8C15BDAF-ADF6-9099-ECA4-7BA1DA36A884">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:30:19 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="commision rate" id="3DFD3266-0E07-E5E8-C60C-EEDB0F85B8D0">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:30:36 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="F4DD4966-4D4E-4236-1558-A658D99249A3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 02:06:47 UTC</createdTime>
+<generatorID>8713727E-7D9B-71B9-CC58-2AAADCFC106C</generatorID>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>739D7C08-3D75-CD49-E5DD-AE8325939AF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFC7DDC1-AB9A-7993-F944-6DC7F41D57F7" name="sales representativ PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-02 01:29:28 UTC</createdTime>
+<ownerDesignName>basisdata 4_1 project</ownerDesignName>
+<engineerTo>
+<item key="E21A28AD-B16E-E70D-C33D-36E91C090B7D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>739D7C08-3D75-CD49-E5DD-AE8325939AF3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
