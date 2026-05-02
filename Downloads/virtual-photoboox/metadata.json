@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Photoboox",
+  "description": "A luxury virtual photobooth experience with real-time rooms, custom grid layouts, and neon filters.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}

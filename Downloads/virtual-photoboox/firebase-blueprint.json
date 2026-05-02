@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "Room": {
+      "title": "Room",
+      "description": "A virtual photobooth session room.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "hostId": { "type": "string" },
+        "status": { "type": "string", "enum": ["waiting", "countdown", "capturing", "completed"] },
+        "currentLayout": { "type": "string" },
+        "participants": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "countdownStart": { "type": "string", "format": "date-time" },
+        "capturedPhotos": { "type": "object" }
+      },
+      "required": ["id", "name", "hostId", "status", "currentLayout"]
+    },
+    "Template": {
+      "title": "Template",
+      "description": "A photobooth frame template.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "overlayImageUrl": { "type": "string" },
+        "layout": { "type": "string" },
+        "config": { "type": "object" }
+      },
+      "required": ["id", "name", "overlayImageUrl", "layout"]
+    },
+    "Sticker": {
+      "title": "Sticker",
+      "description": "A sticker asset for editing.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "url": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["id", "name", "url"]
+    }
+  },
+  "firestore": {
+    "/rooms/{roomId}": {
+      "schema": "Room",
+      "description": "Virtual session rooms"
+    },
+    "/templates/{templateId}": {
+      "schema": "Template",
+      "description": "Frame templates"
+    },
+    "/stickers/{stickerId}": {
+      "schema": "Sticker",
+      "description": "Sticker assets"
+    }
+  }
+}
