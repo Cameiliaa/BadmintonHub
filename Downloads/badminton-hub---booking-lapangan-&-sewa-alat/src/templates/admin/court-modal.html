@@ -1,0 +1,67 @@
+  <!-- ==================== MODAL TAMBAH / EDIT LAPANGAN ==================== -->
+  <div id="court-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-xs overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-md w-full shadow-2xl border border-slate-200 overflow-hidden my-8 transform transition-all">
+      <div class="p-5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+        <div class="flex items-center gap-2.5">
+          <div class="p-2 rounded-xl bg-emerald-500 text-slate-950 font-bold">
+            <i data-lucide="layout-grid" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 id="court-modal-title" class="font-extrabold text-base text-white">Tambah Lapangan Baru</h3>
+            <p class="text-xs text-slate-400">Atur spesifikasi dan tarif sewa per jam</p>
+          </div>
+        </div>
+        <button onclick="closeCourtModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="court-form" onsubmit="saveCourtForm(event)" class="p-6 space-y-4 text-xs">
+        <input type="hidden" id="court-form-id" value="" />
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Nama Lapangan <span class="text-red-500">*</span></label>
+          <input type="text" id="court-form-name" required placeholder="Contoh: Court 4 Executive Indoor" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition text-xs" />
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Tipe / Kategori Lapangan <span class="text-red-500">*</span></label>
+          <input type="text" id="court-form-type" required placeholder="Contoh: VIP Tournament Edition / Standard Indoor" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition text-xs" />
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Spesifikasi Karpet & Fasilitas</label>
+          <textarea id="court-form-spec" rows="2" placeholder="Contoh: Karpet Vinyl PBSI Enlio Hijau · LED 800 Lux · Full AC" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition text-xs"></textarea>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Tarif Sewa per Jam (Rp) <span class="text-red-500">*</span></label>
+          <div class="relative">
+            <span class="absolute left-3.5 top-2.5 font-bold text-slate-400">Rp</span>
+            <input type="number" id="court-form-price" required min="10000" step="1000" placeholder="60000" class="w-full pl-11 pr-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition text-xs font-mono font-bold" />
+          </div>
+        </div>
+
+        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-between">
+          <div>
+            <span class="font-bold text-slate-800 block">Status Pemeliharaan (Maintenance)</span>
+            <span class="text-[11px] text-slate-500">Kunci lapangan agar tidak dapat dipesan</span>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="court-form-locked" class="sr-only peer" />
+            <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+          </label>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 pt-2">
+          <button type="button" onclick="closeCourtModal()" class="py-2.5 px-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold transition">
+            Batal
+          </button>
+          <button type="submit" class="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold transition shadow-md shadow-emerald-600/20">
+            Simpan Lapangan
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+

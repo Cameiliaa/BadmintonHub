@@ -1,0 +1,6 @@
+{
+  "name": "Badminton Hub - Booking Lapangan & Sewa Alat",
+  "description": "Platform booking lapangan badminton standar PBSI, sewa raket, shuttlecock, pembayaran QRIS instan, dan dashboard manajemen admin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

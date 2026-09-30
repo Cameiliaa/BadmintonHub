@@ -1,0 +1,207 @@
+  <!-- ==================== PENYEWA VIEW ==================== -->
+  <main id="customer-view" class="flex-grow">
+    
+    <!-- 1. HERO BANNER (DARK THEME) -->
+    <section id="beranda" class="bg-[#0B132A] text-white pt-12 pb-16 lg:py-20 relative overflow-hidden">
+      <!-- Background Glow Effect -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Left Column: Copy & Actions -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-emerald-400 text-xs font-semibold">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              Arena Badminton Modern & Terpercaya di Jakarta
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white" style="text-wrap: balance;">
+              Sewa Lapangan Badminton Mudah, Cepat & Pasti.
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Fasilitas karpet vinyl standar PBSI, pencahayaan LED anti-silau 800 lux, shower air panas, dan reservasi instan tanpa ribet telepon manual.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#jadwal" class="px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                Pilih Jadwal Sekarang
+              </a>
+              <a href="#sewa-alat" class="px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold text-sm transition flex items-center gap-2">
+                <i data-lucide="package" class="w-4 h-4"></i>
+                Lihat Sewa Raket & Shuttlecock
+              </a>
+            </div>
+
+            <!-- Bottom Stats Row -->
+            <div class="pt-6 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+              <div class="flex items-center gap-3 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+                  <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">3 Lapangan</h4>
+                  <p class="text-xs text-slate-400">Karpet Vinyl PBSI</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">08:00 - 23:00</h4>
+                  <p class="text-xs text-slate-400">Buka Setiap Hari</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+                  <i data-lucide="qr-code" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white leading-snug">QRIS Instan</h4>
+                  <p class="text-xs text-slate-400">Akurat, Otomatis, Cepat</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Promo Card with Arena Photo -->
+          <div class="lg:col-span-5">
+            <div class="bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl border border-slate-700/80 overflow-hidden shadow-2xl">
+              <!-- Arena Image Container -->
+              <div class="relative h-56 sm:h-64 overflow-hidden bg-slate-950">
+                <img 
+                  src="/images/hero_badminton_court_1790574248974.jpg" 
+                  alt="Lapangan Badminton Karpet Vinyl PBSI Badminton Hub"
+                  class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                  onerror="this.onerror=null; this.src='/src/assets/images/hero_badminton_court_1790574248974.jpg';"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                <div class="absolute top-4 right-4 bg-emerald-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                  Tournament Ready
+                </div>
+              </div>
+
+              <!-- Promo Card Details -->
+              <div class="p-5 sm:p-6 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+                    <i data-lucide="tag" class="w-4 h-4"></i> Promo Spesial Pekan Ini
+                  </span>
+                  <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono">KODE: SMASH10</span>
+                </div>
+                
+                <h3 class="text-lg font-bold text-white">
+                  Diskon 10% untuk booking 2 jam berturut-turut
+                </h3>
+                
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Hemat lebih banyak saat mabar bersama komunitas! Potongan otomatis berlaku di keranjang jika memesan 2 slot atau lebih.
+                </p>
+
+                <div class="pt-2 flex items-center justify-between text-xs text-slate-400">
+                  <span>Berlaku Senin - Minggu</span>
+                  <span class="text-emerald-400 font-semibold">Tersedia untuk semua lapangan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. HORIZONTAL DATE SELECTOR STRIP -->
+    <section class="bg-white/95 backdrop-blur-xs border-b border-slate-200 sticky top-16 z-30 shadow-xs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 shrink-0">
+            <i data-lucide="calendar-days" class="w-4 h-4 text-emerald-600"></i>
+            <span>Pilih Tanggal:</span>
+          </div>
+
+          <!-- Date Tabs Container (Scrollable) -->
+          <div id="date-selector-strip" class="flex items-center gap-2 overflow-x-auto pb-1 custom-scrollbar shrink-0 max-w-full">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COURT SCHEDULE GRID -->
+    <section id="jadwal" class="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header & Realtime Slot Counters -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <h2 id="active-date-display" class="text-2xl font-extrabold text-slate-900 tracking-tight">
+            Daftar Lapangan Aktif: Senin, 28 Sep
+          </h2>
+          <p class="text-sm text-slate-500 mt-1">
+            Klik slot waktu hijau untuk menambah ke keranjang belanja Anda.
+          </p>
+        </div>
+
+        <!-- Live Badge Status Counters -->
+        <div class="flex items-center gap-2 shrink-0">
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span id="stat-available-slots">Tersedia: 36 Slot</span>
+          </div>
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-600">
+            <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+            <span id="stat-booked-slots">Terisi: 9 Slot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Court Cards Container -->
+      <div id="courts-container" class="space-y-6">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- 4. EQUIPMENT & ADD-ON STORE SECTION -->
+    <section id="sewa-alat" class="py-12 bg-white border-t border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Perlengkapan Lengkap</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Sewa Alat & Kebutuhan Main</h2>
+          <p class="text-sm text-slate-500 mt-2">
+            Tidak bawa raket atau kehabisan kok? Kami menyediakan rental raket berkualitas dan perlengkapan siap pakai di arena.
+          </p>
+        </div>
+
+        <!-- Store Grid -->
+        <div id="store-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered via JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. VENUE FACILITIES SECTION -->
+    <section id="fasilitas" class="py-14 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Kenyamanan Maksimal</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Fasilitas Arena Terlengkap</h2>
+          <p class="text-sm text-slate-500 mt-2">Didesain khusus untuk kepuasan bermain komunitas dan atlet badminton.</p>
+        </div>
+
+        <div id="facilities-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Rendered dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+

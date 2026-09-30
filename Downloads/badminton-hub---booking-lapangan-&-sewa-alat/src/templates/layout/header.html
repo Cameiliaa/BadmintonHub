@@ -1,0 +1,56 @@
+  <!-- ==================== TOP NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a id="brand-logo-link" href="#beranda" onclick="handleBrandLogoClick(event)" class="shrink-0 flex items-center gap-2.5 group cursor-pointer mr-2 md:mr-6">
+        <div id="brand-logo-icon" class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform shrink-0">
+          <i id="brand-icon-lucide" data-lucide="activity" class="w-5 h-5"></i>
+        </div>
+        <div class="leading-tight">
+          <span class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-1.5 whitespace-nowrap">
+            Badminton<span id="brand-logo-hub" class="text-emerald-600">Hub</span>
+          </span>
+          <span id="brand-subtitle" class="text-[11px] font-medium text-slate-500 block whitespace-nowrap">Arena & Pro Store</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links (PENYEWA MODE ONLY - Clean, Single Line, No Wrapping) -->
+      <nav id="customer-nav-links" class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-slate-600 shrink-0">
+        <a href="#beranda" class="hover:text-emerald-600 transition-colors whitespace-nowrap">Beranda</a>
+        <a href="#jadwal" class="hover:text-emerald-600 transition-colors whitespace-nowrap">Jadwal & Lapangan</a>
+        <a href="#sewa-alat" class="hover:text-emerald-600 transition-colors whitespace-nowrap">Sewa Alat & Kafe</a>
+        <a href="#fasilitas" class="hover:text-emerald-600 transition-colors whitespace-nowrap">Fasilitas</a>
+      </nav>
+
+      <!-- Right Actions: Cart, Ticket, Role Switcher -->
+      <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
+        <!-- Role Indicator Badge (Shown in Admin Mode only, hidden in customer view to maintain spacious layout) -->
+        <span id="role-badge" class="hidden items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-200 whitespace-nowrap">
+          <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+          Mode: ADMINISTRATOR
+        </span>
+
+        <!-- Tiket Saya Button (Visible when user has a booking) -->
+        <button id="my-ticket-nav-btn" onclick="openLatestTicketModal()" class="hidden px-3 py-2 rounded-xl border border-emerald-300 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 text-xs font-bold transition flex items-center gap-1.5 shadow-xs whitespace-nowrap shrink-0">
+          <i data-lucide="ticket" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+          <span>E-Tiket Saya</span>
+        </button>
+
+        <!-- Cart Button (Penyewa Mode Only) -->
+        <button id="cart-btn" onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 transition flex items-center gap-2 whitespace-nowrap shrink-0">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+          <span class="hidden sm:inline text-xs font-bold">Keranjang</span>
+          <span id="cart-counter" class="w-5 h-5 rounded-full bg-emerald-600 text-white text-[11px] font-bold flex items-center justify-center shrink-0">0</span>
+        </button>
+
+        <!-- Logout is shown only after admin login -->
+        <button id="role-toggle-btn" onclick="logoutAdmin()" class="hidden px-3.5 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white shadow-sm whitespace-nowrap shrink-0">
+          <i id="role-toggle-icon" data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+          <span id="role-toggle-text">Keluar Admin</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+

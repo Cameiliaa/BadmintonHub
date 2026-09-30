@@ -1,0 +1,184 @@
+  <!-- ==================== ADMIN VERIFICATION POPUP MODAL ==================== -->
+  <div id="admin-verify-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-xs overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl border border-slate-200 overflow-hidden my-8 transform transition-all">
+      
+      <!-- Modal Header -->
+      <div class="p-5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <div class="p-2 rounded-xl bg-emerald-500 text-slate-950 font-bold">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="font-extrabold text-base text-white">Verifikasi Pembayaran & Reservasi</h3>
+              <span id="admin-verify-booking-id" class="px-2 py-0.5 rounded font-mono font-bold text-[11px] bg-slate-800 text-emerald-400 border border-slate-700">BHUB-2026-9812</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-0.5">Tinjau kesesuaian bukti QRIS sebelum menerbitkan e-tiket resmi.</p>
+          </div>
+        </div>
+        <button onclick="closeAdminVerifyModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (Two-Column Layout) -->
+      <div class="p-6 space-y-6 text-xs">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          
+          <!-- Column 1: Customer Profile & Order Summary -->
+          <div class="space-y-4">
+            
+            <!-- Customer Card -->
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2.5">
+              <h4 class="font-extrabold text-slate-900 text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="user" class="w-3.5 h-3.5 text-emerald-600"></i>
+                Profil Pemesan
+              </h4>
+              <div class="space-y-1.5 text-slate-700">
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Nama:</span>
+                  <span id="verify-cust-name" class="font-bold text-slate-900">Budi Pratama</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">WhatsApp:</span>
+                  <a id="verify-cust-phone-link" href="#" target="_blank" class="font-semibold text-emerald-700 hover:underline flex items-center gap-1">
+                    <span id="verify-cust-phone">081234567890</span>
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </a>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Email:</span>
+                  <span id="verify-cust-email" class="font-bold text-emerald-700 truncate max-w-[160px]">budi@gmail.com</span>
+                </div>
+                <div class="flex justify-between text-[11px] pt-1 border-t border-slate-200">
+                  <span class="text-slate-500">Waktu Masuk:</span>
+                  <span id="verify-timestamp" class="font-medium text-slate-600">28 Sep 2026, 14:20 WIB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Breakdown -->
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2.5">
+              <h4 class="font-extrabold text-slate-900 text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-emerald-600"></i>
+                Rincian Pesanan
+              </h4>
+              <div id="verify-order-items" class="space-y-1.5 font-medium text-slate-800">
+                <!-- Injected via JS -->
+              </div>
+              <div class="pt-2 border-t border-slate-200 flex justify-between items-center">
+                <span class="font-bold text-slate-700">Total Tagihan QRIS:</span>
+                <span id="verify-order-total" class="text-base font-black text-emerald-600 font-mono">Rp 0</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Uploaded Payment Proof & Simulated QRIS Receipt -->
+          <div class="space-y-4">
+            
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-3">
+              <div class="flex items-center justify-between">
+                <h4 class="font-extrabold text-slate-900 text-xs uppercase tracking-wider flex items-center gap-1.5">
+                  <i data-lucide="image" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  Bukti Pembayaran QRIS
+                </h4>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">
+                  File Terlampir
+                </span>
+              </div>
+
+              <!-- Realistic Digital Receipt Container -->
+              <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-xs space-y-2.5 font-mono text-[11px]">
+                <div class="text-center pb-2 border-b border-dashed border-slate-300">
+                  <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-1">
+                    <i data-lucide="check" class="w-5 h-5"></i>
+                  </div>
+                  <span class="font-bold text-slate-900 text-xs block">TRANSAKSI QRIS BERHASIL</span>
+                  <span class="text-[10px] text-slate-500">PT JARINGAN PEMBAYARAN ELEKTRONIK</span>
+                </div>
+
+                <div class="space-y-1 text-slate-700">
+                  <div class="flex justify-between">
+                    <span>Merchant:</span>
+                    <span class="font-bold">BADMINTON HUB ARENA</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>NMID:</span>
+                    <span>ID1020084729103</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>No. Referensi:</span>
+                    <span id="verify-receipt-ref">QRIS-BCA-9812481</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Sumber Dana:</span>
+                    <span>BCA Mobile / QRIS Nasional</span>
+                  </div>
+                  <div class="flex justify-between font-bold text-slate-900 text-xs pt-1 border-t border-dashed border-slate-300">
+                    <span>Nominal:</span>
+                    <span id="verify-receipt-amount" class="text-emerald-600 font-bold">Rp 0</span>
+                  </div>
+                </div>
+
+                <div class="pt-1 text-center text-[10px] text-slate-400">
+                  <span id="verify-proof-filename" class="truncate block">struk_pembayaran_qris.jpg</span>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-900 text-[11px] flex items-start gap-2">
+                <i data-lucide="info" class="w-4 h-4 text-blue-600 shrink-0 mt-0.5"></i>
+                <p>Nominal transfer sesuai dengan tagihan pesanan. Tiket siap disetujui atau ditolak.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Verification Decision Section -->
+        <div class="bg-slate-100 p-4 rounded-2xl border border-slate-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <label class="block font-bold text-slate-900 text-xs">
+              Catatan Verifikasi Admin (Tampil di Tiket & Terkirim ke Email Pelanggan):
+            </label>
+            <span id="verify-current-status-badge" class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900">
+              STATUS: MENUNGGU VERIFIKASI
+            </span>
+          </div>
+
+          <textarea 
+            id="verify-admin-note-input" 
+            rows="2" 
+            placeholder="Tulis catatan persetujuan atau alasan penolakan..."
+            class="w-full p-3 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 bg-white text-xs outline-none transition"
+          >Pembayaran Lunas, silakan tunjukkan tiket PDF saat tiba di arena.</textarea>
+
+          <!-- Action Buttons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <button 
+              id="btn-admin-approve" 
+              onclick="executeAdminApproval()" 
+              class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs shadow-md shadow-emerald-600/25 transition flex items-center justify-center gap-2"
+            >
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              <span>Setujui & Konfirmasi (LUNAS)</span>
+            </button>
+
+            <button 
+              id="btn-admin-reject" 
+              onclick="executeAdminRejection()" 
+              class="w-full py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs shadow-md shadow-red-600/25 transition flex items-center justify-center gap-2"
+            >
+              <i data-lucide="x-circle" class="w-4 h-4"></i>
+              <span>Tolak Pembayaran (DITOLAK)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
